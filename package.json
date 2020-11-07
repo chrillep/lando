@@ -154,7 +154,7 @@
     "command-line-test": "^1.0.10",
     "compression": "^1.7.4",
     "coveralls": "^3.0.1",
-    "dotenv": "^4.0.0",
+    "dotenv": "^8.2.0",
     "elasticsearch": "~10.1.2",
     "eslint": "^6.1.0",
     "eslint-config-google": "^0.9.1",
