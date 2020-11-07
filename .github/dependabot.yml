@@ -1,0 +1,44 @@
+version: 2
+updates:
+- package-ecosystem: docker
+  directory: "/plugins/lando-core/types/utility"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+- package-ecosystem: docker
+  directory: "/plugins/lando-services/services/php/7.3-apache"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+- package-ecosystem: github-actions
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+- package-ecosystem: docker
+  directory: "/plugins/lando-services/services/php/7.3-fpm"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+- package-ecosystem: docker
+  directory: "/plugins/lando-services/services/php/7.4-apache"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+- package-ecosystem: docker
+  directory: "/plugins/lando-services/services/php/7.4-fpm"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
