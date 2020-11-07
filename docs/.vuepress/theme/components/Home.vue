@@ -42,7 +42,6 @@
         <div class="sponsor-button">
           <a class="button transparent" href="https://lando.dev/sponsor">BECOME A SPONSOR</a>
         </div>
-        <Partners />
         <Allies />
         <Heralds />
         <div class="sponsor-button">
@@ -60,11 +59,10 @@
 import Allies from '@theme/components/Allies.vue';
 import Footer from '@theme/components/Footer.vue';
 import Heralds from '@theme/components/Heralds.vue';
-import Partners from '@theme/components/Partners.vue';
 import Patriots from '@theme/components/Patriots.vue';
 
 export default {
-  components: {Allies, Footer, Heralds, Partners, Patriots},
+  components: {Allies, Footer, Heralds, Patriots},
   data() {
     return {
       data: {},
@@ -186,13 +184,7 @@ export default {
       margin: 0
       color: lighten($landoGrey, 20%)
     .sponsor-patriot-block
-      padding: 0
-    .sponsor-patriot-block-image
-      img
-        filter: grayscale(.9)
-        width: 125px
-      img:hover
-        filter: grayscale(0)
+      padding: 2em 1em
   #features
     background-color: #fff
     padding-bottom: 1em
@@ -243,6 +235,8 @@ export default {
       color: lighten($landoGrey, 30%)
 @media (max-width: $MQMobile)
   .lando-home
+    .inner
+      width: auto
     #hero
       .hero-logo
         float: none
@@ -265,6 +259,4 @@ export default {
   .lando-home
     padding-left 1.5rem
     padding-right 1.5rem
-    .inner
-      width: auto
 </style>

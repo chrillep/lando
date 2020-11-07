@@ -1,33 +1,33 @@
 ---
 description: Learn about how to get started contributing code to Lando.
+metaTitle: Getting Started Writing Code for Lando | Lando
 ---
 
 # Getting Started
 
-This section of documentation serves as a guide to help people who wish to contribute code get used to how the Lando source repo works.
+This section is designed for people who want to contribute `code things` to Lando. Specifically, that might mean working on some of the following:
 
-## Forking and Installing Lando From Source
+* Lando itself and its plugins
+* Lando's DevOps pipeline e.g. build, test and deploy
+* Lando's tests and testing infrastructure
+* Lando's documentation and Vuepress documentation site
+* Lando's express API
+* Lando's marketing website
+* Lando's metrics server
+* Lando's Vuepress marketing site
+* Lando's Vuepress events listing
+* Lando's Vuepress blog
 
-In order to help contribute code you will likely need to get Lando running from source. **All subsequent documentation in this section assumes you have done this!**
+## What do I need to get started?
 
-1. If you are not a Lando committer with write access to the [official repo](https://github.com/lando/lando) start by [forking the aforementioned repo](https://help.github.com/articles/fork-a-repo/)
-2. Follow the [install from source instructions](./../installation/source.md) using either the [official repo](https://github.com/lando/lando) or your fork.
-3. Read through the [contribution section](./../contrib/contributing.md) to get a sense of how things work.
+You will need to go through all the steps in our [Getting Involved](contributing.md) section if you have not done so already. This will get you rolling for contribution. All the steps from the aforementioned section for completeness are shown below:
 
-## Contributing Code
+1. [Join](./comms.md)
+2. [Install Lando from source and activate secret toggle](./activate.md)
+3. [Add yourself as a contributor](./first.md)
 
-Lando uses a modified [GitHub Flow](https://guides.github.com/introduction/flow/) development model. You can read more about this process in the aforementioned link but the general flow is:
+## Good First Issues
 
-  1.  Choose a ticket or issue from the [ZenHub board](https://github.com/lando/lando#boards) of the project you are working on.
-  2.  Open a new branch from `master` in the form `ISSUENUMBER-BRIEFDESCRIPTION` to work on that issue
-  3.  Add commits to this branch with message form `#ISSUENUMBER: COMMIT DESCRIPTION`
-  4.  Push the `git push {REMOTE} {ISSUENUMBER-BRIEFDESCRIPTION}` when work is complete
-  5.  [Open a pull request](https://help.github.com/articles/creating-a-pull-request/)
+Once you are set up and ready to contribute, a good place to start is with issues tagged as [good first issue](https://github.com/lando/lando/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22). Peruse the list and see if one or more of those issues is a good fit for you.
 
-Before opening a PR its a good idea to
-
-  * Run [tests locally](./testing.md)
-  * Pull in the latest code from `master` with `git pull origin master`
-  * Make sure you have looked at the [PR checklist](https://github.com/lando/lando/blob/master/.github)
-
-**NEVER EVER EVER EVER PUSH ANYTHING DIRECTLY TO THE MASTER BRANCH!!!**
+If you are having issues with any of the above or need some guidance from one of our guide pros, make sure you [join our Slack org](https://launchpass.com/devwithlando) and check out the **#community** and/or **#contributors** channels.

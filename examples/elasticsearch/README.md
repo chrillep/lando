@@ -23,8 +23,8 @@ Verification commands
 Run the following commands to validate things are rolling as they should.
 
 ```bash
-# Should use version 6.x for the default version
-lando ssh -s defaults -c "curl -XGET localhost:9200" | grep "number" | grep "6."
+# Should use version 6.8.7 for the default version
+lando ssh -s defaults -c "curl -XGET localhost:9200" | grep "number" | grep "6.8.7"
 
 # Should use 1025m as the default heap size
 lando ssh -s defaults -c "env | grep ELASTICSEARCH_HEAP_SIZE=1025m"
@@ -49,10 +49,10 @@ lando ssh -s custom -c "env | grep ELASTICSEARCH_HEAP_SIZE=1026m"
 
 # Should mount custom config to the correct locations
 lando ssh -s custom -u root -c "cat /opt/bitnami/elasticsearch/config/elasticsearch.yml" | grep "ingest: true"
-
-# Should install any specified plugins successfully
-lando ssh -s custom -c "elasticsearch-plugin list" | grep analysis-icu
 ```
+
+Should install any specified plugins successfully
+lando ssh -s custom -c "elasticsearch-plugin list" | grep analysis-icu
 
 Destroy tests
 -------------
