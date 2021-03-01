@@ -160,7 +160,7 @@
     "eslint-config-google": "^0.9.1",
     "eslint-plugin-vue": "^5.2.3",
     "express": "^4.13.3",
-    "jsdoc-to-markdown": "^4.0.1",
+    "jsdoc-to-markdown": "^7.0.0",
     "leia-parser": "^0.3.4",
     "mocha": "^4.1.0",
     "mock-fs": "https://github.com/pirog/mock-fs.git#256-ctxBindingAccess",
