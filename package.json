@@ -158,7 +158,7 @@
     "elasticsearch": "~10.1.2",
     "eslint": "^6.1.0",
     "eslint-config-google": "^0.9.1",
-    "eslint-plugin-vue": "^5.2.3",
+    "eslint-plugin-vue": "^7.7.0",
     "express": "^4.13.3",
     "jsdoc-to-markdown": "^4.0.1",
     "leia-parser": "^0.3.4",
